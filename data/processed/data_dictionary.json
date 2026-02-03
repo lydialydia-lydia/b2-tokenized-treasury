@@ -1,0 +1,16 @@
+{
+  "assets": [
+    "BIL",
+    "BTC"
+  ],
+  "calendar": "daily",
+  "fill_policy": {
+    "BIL": "ffill then bfill (leading NaN fix)",
+    "BTC": "ffill then bfill (safety)"
+  },
+  "feature_defs": {
+    "ret": "pct_change",
+    "logret": "log(price).diff",
+    "rv30": "30-day rolling std(logret) * sqrt(365)"
+  }
+}
