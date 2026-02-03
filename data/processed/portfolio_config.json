@@ -1,0 +1,16 @@
+{
+  "assets": {
+    "ust": "BIL",
+    "btc": "BTC"
+  },
+  "target_weights": {
+    "BIL": 0.95,
+    "BTC": 0.05
+  },
+  "assumptions": {
+    "mode": "constant_weights",
+    "ann_factor": 365,
+    "no_shorting": true,
+    "rebalancing": "none_in_02 (03 handles policy dynamics if needed)"
+  }
+}
